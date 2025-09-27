@@ -5,31 +5,38 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ejercicio_4 {
+public class Ejercicio_4_2{
 
     static void main() {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Escribe número A ");
-        double numeroA = teclado.nextDouble();
-        System.out.println("Escribe número B ");
-        double numeroB = teclado.nextDouble();
-        System.out.println("Escribe número C ");
-        double numeroC = teclado.nextDouble();
+            System.out.println("Escribe número A ");
+            double numeroa = teclado.nextDouble();
+            System.out.println("Escribe número B ");
+            double numerob = teclado.nextDouble();
+            System.out.println("Escribe número C ");
+            double numeroc = teclado.nextDouble();
 
-        if (numeroA<numeroB && numeroB<numeroC){
-            System.out.println("El número A es el menor");
+            if (numeroa<numerob && numerob<numeroc){
+                System.out.println("El número A es el menor");
 
-        }else {
-            if (numeroB<numeroA && numeroB<numeroC){
-                System.out.println("El numero B es el menor");
             }else {
-                if (numeroC<numeroB && numeroC<numeroA){
-                    System.out.println("El número C es el menor");
+                if (numerob<numeroa && numerob<numeroc){
+                    System.out.println("El numero B es el menor");
+                }else {
+                    if (numeroc<numerob && numeroc<numeroa){
+                        System.out.println("El número C es el menor");
 
+                    }else {
+                        if (numeroa == numerob || numeroa == numeroc || numerob == numeroc);
+                        System.out.println("ERROR: hay números introducidos que son iguales ");
+
+                    }
                 }
             }
-        }
+
+
+
 
 
 
