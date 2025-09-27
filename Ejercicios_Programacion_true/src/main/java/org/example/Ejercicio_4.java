@@ -5,7 +5,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ejercicio_4_2{
+public class Ejercicio_4{
 
     static void main() {
         Scanner teclado = new Scanner(System.in);
