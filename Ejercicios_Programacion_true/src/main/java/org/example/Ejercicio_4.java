@@ -28,8 +28,9 @@ public class Ejercicio_4{
                         System.out.println("El número C es el menor");
 
                     }else {
-                        if (numeroa == numerob || numeroa == numeroc || numerob == numeroc);
-                        System.out.println("ERROR: hay números introducidos que son iguales ");
+                        if (numeroa == numerob || numeroa == numeroc || numerob == numeroc) {
+                            System.out.println("ERROR: hay números introducidos que son iguales ");
+                        }
 
                     }
                 }
