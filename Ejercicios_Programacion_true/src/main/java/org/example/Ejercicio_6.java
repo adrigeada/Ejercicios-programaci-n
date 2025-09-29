@@ -23,7 +23,7 @@ public class Ejercicio_6 {
                     double resultado = (base * altura) / 2;
                     System.out.println("EL area del triangulo es: " + resultado);
                 }
-                
+
                 }while (altura <= 0) ;
 
             } while (base <= 0);
