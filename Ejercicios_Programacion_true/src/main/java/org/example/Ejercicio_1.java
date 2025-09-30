@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio_1 {
 
     // Ejercicio 1. Escribe un programa para pedirle al usuario el número de horas y la tarifa por hora para calcular el salario bruto.
-    static void main() {
+    static void Prueba () {
 
         Scanner teclado = new Scanner(System.in);
 
