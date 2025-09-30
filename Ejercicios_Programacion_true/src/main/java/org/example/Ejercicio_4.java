@@ -9,13 +9,16 @@ public class Ejercicio_4 {
 
     static void main() {
         Scanner teclado = new Scanner(System.in);
+        double nu
+do {
+    System.out.println("Escribe número A ");
+    double numeroA = teclado.nextDouble();
+    System.out.println("Escribe número B ");
+    double numeroB = teclado.nextDouble();
+    System.out.println("Escribe número C ");
+    double numeroC = teclado.nextDouble();
 
-        System.out.println("Escribe número A ");
-        double numeroA = teclado.nextDouble();
-        System.out.println("Escribe número B ");
-        double numeroB = teclado.nextDouble();
-        System.out.println("Escribe número C ");
-        double numeroC = teclado.nextDouble();
+} while (numeroC == numeroA || numeroC == numeroB);
 
         if (numeroA<numeroB && numeroB<numeroC){
             System.out.println("El número A es el menor");
