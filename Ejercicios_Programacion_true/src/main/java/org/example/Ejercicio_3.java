@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 // Ejercicio 3. Realizar un programa que pida un número al usuario, que deberá introducirlo usando el teclado.
@@ -8,25 +9,30 @@ import java.util.Scanner;
 public class Ejercicio_3 {
     static void main() {
         Scanner teclado = new Scanner(System.in);
+        int num1 = 0;
+        boolean repetir = false;
 
-        System.out.println("Esribe un número: ");
-        double num1 = teclado.nextDouble();
+        do {
+            System.out.println("Esribe un número: ");
+            try {
+                num1 = teclado.nextInt();
+                repetir = true;
+            } catch (Exception e) {
+                System.out.println("Tiene que ser formato numérico");
+            }
+        }while (repetir == true);
 
-        if (num1>0) {
+
+            if (num1 > 0) {
             System.out.println("Tu número es positivo ");
 
-        }else {
 
-            if (num1==0) {
-                System.out.println("Tu número es natural ");
-            }else {
-                System.out.println("Tu número es negativo ");
+            }else if (num1 == 0 ){
+            System.out.println("Tu número es natural ");
 
-
+             }else {
+            System.out.println("Tu numero es negativo ");
             }
-
-        }
-
 
     }
 
