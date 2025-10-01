@@ -42,7 +42,7 @@ public class Practica_3 {
         do {
             try {
             System.out.println("Introduce tu peso en Kg ");
-            peso = teclado.nextInt();           //Con el peso mínimo calculado y tu peso leído, comprueba que superas el peso minimo. Si no lo superas te avisa que no puedes subir a la atracción.
+            peso = teclado.nextInt();           //Con el peso mínimo calculado y tu peso leído, comprueba que superas el peso minimo.
             repetir2 = true;
 
         }catch (Exception e){
@@ -54,7 +54,7 @@ public class Practica_3 {
 
 
 
-            if (peso < pesomin){
+                if (peso < pesomin){                  //Si no lo superas te avisa que no puedes subir a la atracción.
                 System.out.println("Lo siento no superas el peso mínimo requerido.");
             } else if (peso > PESOMAX) {            //Si superas el peso mínimo, luego comprueba que no superas el peso máximo.
                 int sobrepeso = peso - PESOMAX;     //Si superas el peso máximo, te calcula por cuantos kilos te pasas " sobrepeso" del peso máximo y te lo dice.
