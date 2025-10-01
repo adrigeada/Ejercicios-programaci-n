@@ -19,10 +19,10 @@ public class Ejercicio_8 {
         if (base == lado1 && base == lado2) {
             System.out.println(" El triangulo es equilatero ");
         } else if (base != lado1 && lado1 == lado2 || lado1 != lado2 && lado2 == base || lado1 != lado2 && lado1 == base) {
-            System.out.println("El triangulo es escaleno ");
+            System.out.println("El triangulo es isosceles ");
 
         }else {
-            System.out.println("El triángulo es isosceles ");
+            System.out.println("El triángulo es escaleno ");
         }
 
 

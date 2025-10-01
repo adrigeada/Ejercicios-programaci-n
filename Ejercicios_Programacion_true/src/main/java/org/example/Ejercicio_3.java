@@ -20,7 +20,8 @@ public class Ejercicio_3 {
             } catch (Exception e) {
                 System.out.println("Tiene que ser formato numérico");
             }
-        }while (repetir == true);
+            teclado.nextLine();
+        }while (repetir == false);
 
 
             if (num1 > 0) {

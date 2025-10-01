@@ -7,21 +7,20 @@ import java.util.Scanner;
 public class Ejercicio_7 {
     static void main() {
         Scanner teclado = new Scanner(System.in);
-        String respuesta1;
 
 
-        System.out.println("Tenemos tomate?");
-        respuesta1 = teclado.next();
-        if (respuesta1.equals ("no")){
-            System.out.println("Tenemos que comprar");
-        }else if (respuesta1.equals ("si")){
-            System.out.println("Eres un crack! ");
+        System.out.println("Tenemos tomate (S/N)?");
+        char tomate = teclado.next().charAt(0);
+        System.out.println("Tenemos aceite (S/N)?");
+        char aceite = teclado.next().charAt(0);
+        System.out.println("Tenemos jamón (S/N)?");
+        char jamon = teclado.next().charAt(0);
+
+        if (tomate== 'N' || aceite == 'N' || jamon == 'N'){
+            System.out.println("Tienes que ir a comprar");
+        }else{
+            System.out.println("No comprar");
         }
-
-
-
-
-
 
 
 
