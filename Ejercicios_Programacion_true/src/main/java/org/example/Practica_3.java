@@ -36,7 +36,7 @@ public class Practica_3 {
             System.out.println("Error de lectura. Baja de la báscula y vuelve a subir");
             
         }else {                                 // Si no pasa ninguna de las dos condiciones anteriores, primero te calcula el peso minimo "pesomin" con tu altura y lo guarda. Después te pide el peso.
-            float pesomin = (altura * 2)/8;
+            float pesomin = (altura * 2)/8;     // El peso minimo está guardado en float por que pueden salir decimales de la división,
 
 
         do {
@@ -46,7 +46,7 @@ public class Practica_3 {
             repetir2 = true;
 
         }catch (Exception e){
-            System.out.println("ERROR. El formato tiene que ser números enteros.");
+            System.out.println("ERROR. El formato tiene que ser números enteros."); // Otro try catch para que solo se puedan meter números enteros,
         }
             teclado.nextLine();
 
@@ -61,7 +61,7 @@ public class Practica_3 {
                 System.out.println("Lo siento sobrepasas el límite de la atracción por " +sobrepeso+ "Kg");
                 
             }else {
-                System.out.println("Pesas " +peso+ "Kg. Peso mínimo calculado: " +pesomin+ "Kg. ¡SUBE A LA ATRAACIÓN!"); // Si no superas el peso máximo te dice tu peso "peso", Te informa de tu peso mínimo "pesomin" y te invita a subir a la atracción.
+                System.out.println("Pesas " +peso+ "Kg. Peso mínimo calculado: " +pesomin+ "Kg. ¡SUBE A LA ATRAACIÓN!"); // Si no superas el peso máximo, te dice tu peso "peso", Te informa de tu peso mínimo "pesomin" y te invita a subir a la atracción.
 
             }
 
