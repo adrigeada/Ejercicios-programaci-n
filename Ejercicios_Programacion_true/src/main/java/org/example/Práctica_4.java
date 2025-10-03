@@ -10,7 +10,7 @@ public class Práctica_4 {
         boolean repetir1 = false;  //Repetidores para parar el bucle do while del try catch.
         boolean repetir2 = false;
 
-        
+
         do {                        //Bucle del try catch para evitar datos introducidos que no sean números.
             try{
                 do {
