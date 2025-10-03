@@ -7,24 +7,45 @@ public class Práctica_4 {
         Scanner teclado = new Scanner(System.in);
         int num1 = 0;
         int num2 = 0;
+        boolean repetir1 = false;
+        boolean repetir2 = false;
 
         do {
-            System.out.println("Introduce el multiplicando (3 cifras)");
-            num1 = teclado.nextInt();
-            if (num1 <= 0 || num1 < 100 || num1 > 999){
-                System.out.println("Error el número tiene que ser de 3 cifras");
+            try{
+                do {
+                    System.out.println("Introduce el multiplicando (3 cifras)");
+                    num1 = teclado.nextInt();
+                    repetir1 = true;
+                    if (num1 < 100 || num1 > 999){
+                        System.out.println("Error el número tiene que ser un número positivo de 3 cifras");
+                    }
+                }while (num1 < 100 || num1 > 999);
+
+            }catch (Exception e){
+                System.out.println("Error el formato tienen que ser números enteros");
             }
-        }while (num1 <= 0 || num1 < 100 || num1 > 999);
+            teclado.nextLine();
+
+        }while (repetir1==false);
 
         do {
-            System.out.println("Introduce el multiplicador (3 cifras)");
-            num2 = teclado.nextInt();
-            if (num2 <= 0 || num2 < 100 || num2 > 999){
-                System.out.println("Error el número tiene que ser de 3 cifras");
+            try{
+                do {
+                    System.out.println("Introduce el multiplicador (3 cifras)");
+                    num2 = teclado.nextInt();
+                    repetir2 = true;
+                    if (num2 < 100 || num2 > 999){
+                        System.out.println("Error el número tiene que ser un número positivo de 3 cifras");
+                    }
+                }while (num2 < 100 || num2 > 999);
+
+            }catch (Exception e){
+                System.out.println("Error el formato tiene que ser números enteros");
             }
+            teclado.nextLine();
 
-        }while (num2 <= 0 || num2 < 100 || num2 > 999);
-
+        }while (repetir2==false);
+        
 
         String numero_string = Integer.toString(num2);
         String unidades = numero_string.substring(2);
@@ -35,7 +56,7 @@ public class Práctica_4 {
         int decenas_int = Integer.parseInt(decenas);
 
         String numero_string3 = Integer.toString(num2);
-        String centenas = numero_string.substring(1);
+        String centenas = numero_string.substring(0,1);
         int centenas_int = Integer.parseInt(centenas);
 
 
