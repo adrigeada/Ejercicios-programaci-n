@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Práctica_4 {
-    static void main() {
+    static void main () {
         Scanner teclado = new Scanner(System.in);
         int num1 = 0;              //Variables para los numeros de tres cifras que se introducen. Valor 0 para inicializarlo.
         int num2 = 0;
