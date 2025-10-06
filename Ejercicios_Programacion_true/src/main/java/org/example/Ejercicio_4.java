@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Ejercicio_4{
 
-    static void main() {
+    static void prueba1 () {
         Scanner teclado = new Scanner(System.in);
 
         double numeroA, numeroB, numeroC;
