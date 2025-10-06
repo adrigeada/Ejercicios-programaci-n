@@ -5,6 +5,8 @@ package org.example;
 public class Main {
     static void main() {
         Ejercicio_1.Prueba();
+        Ejercicio_4.main();
+        
 
     }
 }
