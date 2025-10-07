@@ -19,7 +19,9 @@ public class Practica4negativo {
         if (negativo == false){
             do {                        //Bucle del try catch para evitar datos introducidos que no sean números.
                 try{
-                    do { //PROBLEMA AQUI
+                    do {
+                        System.out.println("Introduce el multiplicando (3 cifras)");
+                        num1 = teclado.nextInt(); //PROBLEMA AQUI
                         repetir1 = true;
                         if (num1 < 100 || num1 > 999){             //Si el número introducido es menor que 100 (tiene 2 cifras) o es mayor que 999 (tiene 4 cifras) salta error.
                             System.out.println("Error el número tiene que ser un número positivo de 3 cifras");
